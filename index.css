@@ -1,0 +1,214 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    /* background-color: #191970; */
+}
+
+#top-header{
+    display: flex;
+    background-color: #081f49;
+    height: 100%;
+    width: 100%;
+    justify-content: flex-start
+}
+
+#logo-image{
+    height: 90px;
+    width: 90px;
+}
+
+#heading{
+    color: white;
+    text-decoration: underline;
+    font-weight: bolder;
+    margin-top: 30px;
+}
+
+#img-container{
+    height: 800px;
+    width: 1265px;
+    background-image: url("grp-img.jpg");
+    background-size: cover;
+}
+
+.text-overlay {
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    left: 0%;
+    color: white;
+    font-size: 24px;
+    font-weight: bolder;
+    text-align:justify;
+    background-color: rgba(8, 31, 73, 0.5); 
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#read-more-link{
+    color: white;
+    text-decoration: none;
+    font-weight: lighter;
+    font-size: medium;
+    font-family: cursive;
+}
+
+#hiring-div{
+    margin-top: 25px;
+    height: 50px;
+    width: 1265px;
+    display: flex;
+    justify-content: center;
+}
+
+/* #hiring-link{
+    color: red;
+    font-size: 25px;
+    font-weight: bolder;
+    transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+#hiring-link:hover {
+    color: blue; 
+    font-size: 28px; 
+} */
+
+
+#hiring-link {
+    color: red;
+    font-size: 25px;
+    font-weight: bolder;
+    position: relative; /* Necessary for movement */
+    animation: moveLink 3s infinite alternate; /* Add animation to the link */
+}
+
+@keyframes moveLink {
+    0% {
+        left: 0px; /* Start position */
+    }
+    50% {
+        left: 20px; /* Move to the right */
+    }
+    100% {
+        left: 0px; /* Return to the start position */
+    }
+}
+
+#maindiv{
+    height: auto;
+    width: 1265px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #191970;
+}
+
+#about-us-div{
+    /* border: 2px, #081f49 solid ; */
+    background-color: #353e65; 
+    margin-top: 10px;
+    height: auto;
+    width: 600px;
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+}
+
+#service-div {
+    /* border: 2px solid #081f49;  */
+    background-color: #353e65;
+    margin-top: 10px;
+    height: auto;
+    width: 600px;
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+}
+
+
+/* #maindiv2{
+    height: auto;
+    width: 1265px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+
+#gallery-div{
+    margin-top: 10px;
+    height: 204px;
+    width: 1265px; 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    margin-left: 20px;
+} 
+
+.img{
+    border: 2px white solid;
+    height: 200px;
+    width: 200px;
+}
+
+footer {
+    background-color: #081f49;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+footer a {
+    color: #71a6d2;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+} */
+
+#maindiv2 {
+    height: auto;
+    width: 1265px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column; /* Ensures footer stays at the bottom */
+    min-height: 100vh; /* Makes sure the div occupies the full viewport height */
+}
+
+#gallery-div {
+    margin-top: 10px;
+    height: 204px;
+    width: 1265px; 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    margin-left: 20px;
+}
+
+.img {
+    border: 2px white solid;
+    height: 200px;
+    width: 200px;
+}
+
+footer {
+    background-color: #081f49;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    margin-top: auto; /* Pushes footer to the bottom */
+    width: 100%; /* Ensures the footer takes up the full width */
+}
+
+footer a {
+    color: #71a6d2;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
