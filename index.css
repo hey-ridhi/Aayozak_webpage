@@ -1,7 +1,6 @@
 *{
     margin: 0px;
     padding: 0px;
-    /* background-color: #191970; */
 }
 
 #top-header{
@@ -61,37 +60,23 @@
     justify-content: center;
 }
 
-/* #hiring-link{
-    color: red;
-    font-size: 25px;
-    font-weight: bolder;
-    transition: color 0.3s ease, font-size 0.3s ease;
-}
-
-#hiring-link:hover {
-    color: blue; 
-    font-size: 28px; 
-} */
-
-
 #hiring-link {
     color: red;
     font-size: 25px;
     font-weight: bolder;
-    position: relative; /* Necessary for movement */
-    animation: moveLink 3s infinite alternate; /* Add animation to the link */
+    position: relative; 
+    animation: moveLink 3s infinite alternate; 
 }
 
 @keyframes moveLink {
     0% {
-        left: 0px; /* Start position */
+        left: 0px; 
     }
     50% {
-        left: 20px; /* Move to the right */
+        left: 20px; 
     }
     100% {
-        left: 0px; /* Return to the start position */
-    }
+        left: 0px;     }
 }
 
 #maindiv{
@@ -103,7 +88,6 @@
 }
 
 #about-us-div{
-    /* border: 2px, #081f49 solid ; */
     background-color: #353e65; 
     margin-top: 10px;
     height: auto;
@@ -114,7 +98,6 @@
 }
 
 #service-div {
-    /* border: 2px solid #081f49;  */
     background-color: #353e65;
     margin-top: 10px;
     height: auto;
@@ -124,31 +107,61 @@
     margin-bottom: 10px;
 }
 
-
-/* #maindiv2{
+#maindiv3{
     height: auto;
     width: 1265px;
     display: flex;
-    justify-content: space-between;
-    flex-direction: row;
+    flex-direction: column;
 }
 
+#ourevents{
+    background-color: #191970;
+    color: white;
+    text-decoration: underline;
+    font-family: cursive;
+}
 
-#gallery-div{
-    margin-top: 10px;
-    height: 204px;
-    width: 1265px; 
+#vedanta {
+    padding : 10px;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between; 
-    margin-left: 20px;
-} 
+    align-items: flex-start; 
+    gap: 20px;
+}
 
-.img{
-    border: 2px white solid;
-    height: 200px;
-    width: 200px;
+#dtba {
+    padding:10px;
+    margin-top: 20px;
+    display: flex;
+    align-items: flex-start; 
+    gap: 20px;
+}
+
+#cansupport {
+    padding:10px;
+    margin-top: 20px;
+    display: flex;
+    align-items: flex-start; 
+    gap: 20px;
+}
+
+.eventimg {
+    width: 200px; 
+    height: 200px; 
+    object-fit: cover; 
+}
+
+.event_text {
+    text-align: left;
+    max-width: 1000px;
+    color: black;
+    font-size: 17px;
+}
+
+.event_name{
+    text-decoration: underline;
+    text-align: left;
+    color: #191970;
+    font-family: cursive;
 }
 
 footer {
@@ -173,8 +186,8 @@ footer a:hover {
     width: 1265px;
     display: flex;
     justify-content: space-between;
-    flex-direction: column; /* Ensures footer stays at the bottom */
-    min-height: 100vh; /* Makes sure the div occupies the full viewport height */
+    flex-direction: column; 
+    min-height: 100vh; 
 }
 
 #gallery-div {
@@ -200,8 +213,8 @@ footer {
     text-align: center;
     padding: 20px;
     font-size: 14px;
-    margin-top: auto; /* Pushes footer to the bottom */
-    width: 100%; /* Ensures the footer takes up the full width */
+    margin-top: auto; 
+    width: 100%; 
 }
 
 footer a {
